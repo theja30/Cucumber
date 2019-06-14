@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2536713064,
+              "duration": 2542891079,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 140185790,
+              "duration": 141953086,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1627300295,
+              "duration": 1530221715,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 1131833606,
+              "duration": 2262948033,
               "status": "passed"
             },
             "line": 5,
@@ -64,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 18374301,
+              "duration": 12154426,
               "status": "passed"
             },
             "line": 6,
@@ -82,120 +82,28 @@
           },
           {
             "result": {
-              "duration": 9073571263,
+              "duration": 951718969,
               "status": "passed"
             },
             "line": 7,
-            "name": "navigate to the first link",
+            "name": "navigate to \"2\" page",
             "match": {
-              "location": "GoogleStepDefination.navigate_to_the_first_link()"
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                }
+              ],
+              "location": "GoogleStepDefination.navigate_to_page(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 8050887,
+              "duration": 3015599072,
               "status": "passed"
             },
             "line": 8,
-            "name": "print Title",
-            "match": {
-              "location": "GoogleStepDefination.print_Title()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1699436971,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GoogleStepDefination.init()"
-            }
-          }
-        ],
-        "line": 18,
-        "name": "Google Search Test by using Examples",
-        "description": "",
-        "id": "google-tests;google-search-test-by-using-examples;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 101008768,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GoogleStepDefination.close_the_Browse()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 841365383,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user opens Google Home page",
-            "match": {
-              "location": "GoogleStepDefination.user_opens_Google_Home_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 711278505,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user enter \"Navathej\" Home page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Navathej",
-                  "offset": 12
-                }
-              ],
-              "location": "GoogleStepDefination.user_enter_Home_page(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 10207006,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "validate if the searches of \"Navathej\" are opened",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Navathej",
-                  "offset": 29
-                }
-              ],
-              "location": "GoogleStepDefination.validate_if_the_searches_of_are_opened(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5738141455,
-              "status": "passed"
-            },
-            "line": 14,
             "name": "navigate to the first link",
             "match": {
               "location": "GoogleStepDefination.navigate_to_the_first_link()"
@@ -204,240 +112,10 @@
           },
           {
             "result": {
-              "duration": 7887556,
+              "duration": 155689330,
               "status": "passed"
             },
-            "line": 15,
-            "name": "print Title",
-            "match": {
-              "location": "GoogleStepDefination.print_Title()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1652716615,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GoogleStepDefination.init()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "Google Search Test by using Examples",
-        "description": "",
-        "id": "google-tests;google-search-test-by-using-examples;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 120320044,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GoogleStepDefination.close_the_Browse()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3508129403,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user opens Google Home page",
-            "match": {
-              "location": "GoogleStepDefination.user_opens_Google_Home_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3102647758,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user enter \"Manjeera\" Home page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Manjeera",
-                  "offset": 12
-                }
-              ],
-              "location": "GoogleStepDefination.user_enter_Home_page(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 16418774,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "validate if the searches of \"Manjeera\" are opened",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Manjeera",
-                  "offset": 29
-                }
-              ],
-              "location": "GoogleStepDefination.validate_if_the_searches_of_are_opened(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 8548695500,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "navigate to the first link",
-            "match": {
-              "location": "GoogleStepDefination.navigate_to_the_first_link()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 8575103,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "print Title",
-            "match": {
-              "location": "GoogleStepDefination.print_Title()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1701772011,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GoogleStepDefination.init()"
-            }
-          }
-        ],
-        "line": 21,
-        "name": "Google Search Test By using Data Map",
-        "description": "",
-        "id": "google-tests;google-search-test-by-using-data-map",
-        "after": [
-          {
-            "result": {
-              "duration": 276770383,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GoogleStepDefination.close_the_Browse()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1602498083,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user opens Google Home page",
-            "match": {
-              "location": "GoogleStepDefination.user_opens_Google_Home_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2330383178,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user enter searchString Home page",
-            "match": {
-              "location": "GoogleStepDefination.user_enter_searchString_Home_page(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "searchString"
-                ],
-                "line": 24
-              },
-              {
-                "cells": [
-                  "Navathej"
-                ],
-                "line": 25
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 8312550,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "validate if the searches of searchString are opened",
-            "match": {
-              "location": "GoogleStepDefination.validate_if_the_searches_of_searchString_are_opened(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "searchString"
-                ],
-                "line": 27
-              },
-              {
-                "cells": [
-                  "Navathej"
-                ],
-                "line": 28
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 9227317583,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "navigate to the first link",
-            "match": {
-              "location": "GoogleStepDefination.navigate_to_the_first_link()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 10028598,
-              "status": "passed"
-            },
-            "line": 30,
+            "line": 9,
             "name": "print Title",
             "match": {
               "location": "GoogleStepDefination.print_Title()"
@@ -451,6 +129,6 @@
     "description": "",
     "id": "google-tests",
     "keyword": "Feature",
-    "uri": "google.feature"
+    "uri": "src/main/java/com/theja/automation/feature/search.feature"
   }
 ]

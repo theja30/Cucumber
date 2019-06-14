@@ -8,7 +8,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import cucumber.api.DataTable;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -78,6 +77,21 @@ public class GoogleStepDefination {
 		}
 	}
 
+	
+	@Then("^navigate to \"([^\"]*)\" page$")
+	public void navigate_to_page(String pageNumber) {
+		WebElement links = driver
+				.findElement(By.xpath("//div[@id='navcnt']//td[@class='cur']"));
+		if(!pageNumber.equalsIgnoreCase(links.getText())){
+		 links = driver
+				.findElement(By.xpath("//div[@id='navcnt']//a[@aria-label='Page "+pageNumber+"']"));
+		driver.navigate().to(links.getAttribute("href"));
+		}
+		else
+		{
+			System.out.println("already in the specified page");
+		}
+	}
 
 	@After
 	public void close_the_Browse() {
