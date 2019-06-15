@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.theja.automation.core.TestBase;
+import com.theja.automation.pages.HomePage;
+import com.theja.automation.pages.SearchPage;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.After;
@@ -20,23 +22,20 @@ import cucumber.api.java.en.When;
 
 public class GoogleStepDefination extends TestBase {
 
-	@Given("^open browser$")
-	public void opn_browser() {
-		System.setProperty("webdriver.chrome.driver", "/Users/Theja/Documents/Study/chromedriver");
-		driver = new ChromeDriver();
-	}
+	 HomePage homePage;
+	 SearchPage searchPage;
 	
-
 	@Given("^user opens Google Home page$")
 	public void user_opens_Google_Home_page() {
-		driver.get("https://www.google.com");
-		driver.manage().window().maximize();
+		TestBase.initialization();
+		homePage=new HomePage();
+		homePage.navigateToHomePage();
+		
 	}
 
 	@When("^user enter \"([^\"]*)\" Home page$")
 	public void user_enter_Home_page(String searchString) throws Throwable {
-		driver.findElement(By.name("q")).sendKeys(searchString);
-		clickButton(driver.findElement(By.name("btnK")));
+		searchPage=homePage.searchGivenString(searchString);
 	}
 
 	private void clickButton(WebElement button) {
@@ -46,12 +45,12 @@ public class GoogleStepDefination extends TestBase {
 	
 	@Then("^validate if the searches of \"([^\"]*)\" are opened$")
 	public void validate_if_the_searches_of_are_opened(String searchString) throws Throwable {
-		Assert.assertEquals(searchString+" - Google Search", driver.getTitle());
+		Assert.assertEquals(searchString+" - Google Search", searchPage.getTitle());
 	}
 
 	@Then("^print Title$")
 	public void print_Title() {
-		System.out.println("Title: "+ driver.getTitle());
+		//System.out.println("Title: "+ homePage.getTitle());
 	}
 	
 	@When("^user enter searchString Home page$")
@@ -67,7 +66,7 @@ public class GoogleStepDefination extends TestBase {
 	public void validate_if_the_searches_of_searchString_are_opened(DataTable searchStrings) throws Throwable {
 		for (Map<String,String> searchString : searchStrings.asMaps(String.class,String.class))
 		{
-			System.out.println(searchString.get("searchString"));
+			//System.out.println(searchString.get("searchString"));
 			validate_if_the_searches_of_are_opened(searchString.get("searchString"));
 		}
 	}
@@ -75,6 +74,6 @@ public class GoogleStepDefination extends TestBase {
 
 	@Then("^quit the browser$")
 	public void close_the_Browse() {
-		driver.quit();
+		quitBrowser();
 	}
 }

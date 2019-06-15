@@ -16,51 +16,39 @@ formatter.scenario({
 });
 formatter.step({
   "line": 4,
-  "name": "open browser",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
   "name": "user opens Google Home page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 5,
   "name": "user enter \"Navathej\" Home page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
+  "line": 6,
   "name": "validate if the searches of \"Navathej\" are opened",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "navigate to the first link",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "print Title",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
+  "line": 9,
   "name": "quit the browser",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "GoogleStepDefination.opn_browser()"
-});
-formatter.result({
-  "duration": 2716561786,
-  "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.user_opens_Google_Home_page()"
 });
 formatter.result({
-  "duration": 1460033080,
+  "duration": 3961506107,
   "status": "passed"
 });
 formatter.match({
@@ -73,7 +61,7 @@ formatter.match({
   "location": "GoogleStepDefination.user_enter_Home_page(String)"
 });
 formatter.result({
-  "duration": 1483362615,
+  "duration": 2308218824,
   "status": "passed"
 });
 formatter.match({
@@ -86,32 +74,32 @@ formatter.match({
   "location": "GoogleStepDefination.validate_if_the_searches_of_are_opened(String)"
 });
 formatter.result({
-  "duration": 11989540,
+  "duration": 24103693,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.navigate_to_the_first_link()"
 });
 formatter.result({
-  "duration": 3350238265,
+  "duration": 5892302237,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.print_Title()"
 });
 formatter.result({
-  "duration": 10234011,
+  "duration": 29288,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.close_the_Browse()"
 });
 formatter.result({
-  "duration": 135129197,
+  "duration": 133220507,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 12,
+  "line": 11,
   "name": "Google Search Test by using Examples",
   "description": "",
   "id": "google-tests;google-search-test-by-using-examples",
@@ -119,42 +107,37 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 13,
-  "name": "open browser",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 14,
+  "line": 12,
   "name": "user opens Google Home page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 15,
+  "line": 13,
   "name": "user enter \"\u003csearchString\u003e\" Home page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 16,
+  "line": 14,
   "name": "validate if the searches of \"\u003csearchString\u003e\" are opened",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 17,
+  "line": 15,
   "name": "navigate to the first link",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 18,
+  "line": 16,
   "name": "print Title",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 19,
+  "line": 17,
   "name": "quit the browser",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 20,
+  "line": 18,
   "name": "",
   "description": "",
   "id": "google-tests;google-search-test-by-using-examples;",
@@ -163,28 +146,28 @@ formatter.examples({
       "cells": [
         "searchString"
       ],
-      "line": 21,
+      "line": 19,
       "id": "google-tests;google-search-test-by-using-examples;;1"
     },
     {
       "cells": [
         "Navathej"
       ],
-      "line": 22,
+      "line": 20,
       "id": "google-tests;google-search-test-by-using-examples;;2"
     },
     {
       "cells": [
         "Manjeera"
       ],
-      "line": 23,
+      "line": 21,
       "id": "google-tests;google-search-test-by-using-examples;;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 22,
+  "line": 20,
   "name": "Google Search Test by using Examples",
   "description": "",
   "id": "google-tests;google-search-test-by-using-examples;;2",
@@ -192,17 +175,12 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 13,
-  "name": "open browser",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 14,
+  "line": 12,
   "name": "user opens Google Home page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 15,
+  "line": 13,
   "name": "user enter \"Navathej\" Home page",
   "matchedColumns": [
     0
@@ -210,7 +188,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 16,
+  "line": 14,
   "name": "validate if the searches of \"Navathej\" are opened",
   "matchedColumns": [
     0
@@ -218,32 +196,25 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 17,
+  "line": 15,
   "name": "navigate to the first link",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 18,
+  "line": 16,
   "name": "print Title",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 19,
+  "line": 17,
   "name": "quit the browser",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "GoogleStepDefination.opn_browser()"
-});
-formatter.result({
-  "duration": 1528522956,
-  "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.user_opens_Google_Home_page()"
 });
 formatter.result({
-  "duration": 1135710634,
+  "duration": 3005953988,
   "status": "passed"
 });
 formatter.match({
@@ -256,7 +227,7 @@ formatter.match({
   "location": "GoogleStepDefination.user_enter_Home_page(String)"
 });
 formatter.result({
-  "duration": 981606191,
+  "duration": 1926543307,
   "status": "passed"
 });
 formatter.match({
@@ -269,32 +240,32 @@ formatter.match({
   "location": "GoogleStepDefination.validate_if_the_searches_of_are_opened(String)"
 });
 formatter.result({
-  "duration": 9447706,
+  "duration": 8395590,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.navigate_to_the_first_link()"
 });
 formatter.result({
-  "duration": 3291621816,
+  "duration": 3243551054,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.print_Title()"
 });
 formatter.result({
-  "duration": 10880112,
+  "duration": 42031,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.close_the_Browse()"
 });
 formatter.result({
-  "duration": 131774343,
+  "duration": 108540434,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 23,
+  "line": 21,
   "name": "Google Search Test by using Examples",
   "description": "",
   "id": "google-tests;google-search-test-by-using-examples;;3",
@@ -302,17 +273,12 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 13,
-  "name": "open browser",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 14,
+  "line": 12,
   "name": "user opens Google Home page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 15,
+  "line": 13,
   "name": "user enter \"Manjeera\" Home page",
   "matchedColumns": [
     0
@@ -320,7 +286,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 16,
+  "line": 14,
   "name": "validate if the searches of \"Manjeera\" are opened",
   "matchedColumns": [
     0
@@ -328,32 +294,25 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 17,
+  "line": 15,
   "name": "navigate to the first link",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 18,
+  "line": 16,
   "name": "print Title",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 19,
+  "line": 17,
   "name": "quit the browser",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "GoogleStepDefination.opn_browser()"
-});
-formatter.result({
-  "duration": 1556626165,
-  "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.user_opens_Google_Home_page()"
 });
 formatter.result({
-  "duration": 1413079298,
+  "duration": 2800265739,
   "status": "passed"
 });
 formatter.match({
@@ -366,7 +325,7 @@ formatter.match({
   "location": "GoogleStepDefination.user_enter_Home_page(String)"
 });
 formatter.result({
-  "duration": 3750245268,
+  "duration": 1387874894,
   "status": "passed"
 });
 formatter.match({
@@ -379,32 +338,32 @@ formatter.match({
   "location": "GoogleStepDefination.validate_if_the_searches_of_are_opened(String)"
 });
 formatter.result({
-  "duration": 7914013,
+  "duration": 10690135,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.navigate_to_the_first_link()"
 });
 formatter.result({
-  "duration": 7235954799,
+  "duration": 9105620548,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.print_Title()"
 });
 formatter.result({
-  "duration": 21401378,
+  "duration": 43209,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.close_the_Browse()"
 });
 formatter.result({
-  "duration": 184519911,
+  "duration": 156831283,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 25,
+  "line": 23,
   "name": "Google Search Test By using Data Map",
   "description": "",
   "id": "google-tests;google-search-test-by-using-data-map",
@@ -412,18 +371,32 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 26,
-  "name": "open browser",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 27,
+  "line": 24,
   "name": "user opens Google Home page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 28,
+  "line": 25,
   "name": "user enter searchString Home page",
+  "rows": [
+    {
+      "cells": [
+        "searchString"
+      ],
+      "line": 26
+    },
+    {
+      "cells": [
+        "Navathej"
+      ],
+      "line": 27
+    }
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 28,
+  "name": "validate if the searches of searchString are opened",
   "rows": [
     {
       "cells": [
@@ -438,89 +411,63 @@ formatter.step({
       "line": 30
     }
   ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 31,
-  "name": "validate if the searches of searchString are opened",
-  "rows": [
-    {
-      "cells": [
-        "searchString"
-      ],
-      "line": 32
-    },
-    {
-      "cells": [
-        "Navathej"
-      ],
-      "line": 33
-    }
-  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 34,
+  "line": 31,
   "name": "navigate to the first link",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 35,
+  "line": 32,
   "name": "print Title",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 36,
+  "line": 33,
   "name": "quit the browser",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "GoogleStepDefination.opn_browser()"
-});
-formatter.result({
-  "duration": 1592970680,
-  "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.user_opens_Google_Home_page()"
 });
 formatter.result({
-  "duration": 1367138677,
+  "duration": 3068379624,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.user_enter_searchString_Home_page(DataTable)"
 });
 formatter.result({
-  "duration": 1308717117,
+  "duration": 1274803819,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.validate_if_the_searches_of_searchString_are_opened(DataTable)"
 });
 formatter.result({
-  "duration": 8165142,
+  "duration": 96985201,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.navigate_to_the_first_link()"
 });
 formatter.result({
-  "duration": 6419212661,
+  "duration": 5525071379,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.print_Title()"
 });
 formatter.result({
-  "duration": 7923001,
+  "duration": 24343,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.close_the_Browse()"
 });
 formatter.result({
-  "duration": 126970250,
+  "duration": 108724158,
   "status": "passed"
 });
 formatter.uri("search.feature");
@@ -541,56 +488,44 @@ formatter.scenario({
 });
 formatter.step({
   "line": 4,
-  "name": "open browser",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
   "name": "user opens Google Home page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 5,
   "name": "user enter \"Navathej\" Home page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
+  "line": 6,
   "name": "validate if the searches of \"Navathej\" are opened",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "navigate to \"2\" page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "navigate to the first link",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
+  "line": 9,
   "name": "print Title",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "quit the browser",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "GoogleStepDefination.opn_browser()"
-});
-formatter.result({
-  "duration": 1529106233,
-  "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.user_opens_Google_Home_page()"
 });
 formatter.result({
-  "duration": 1466768329,
+  "duration": 2776433954,
   "status": "passed"
 });
 formatter.match({
@@ -603,7 +538,7 @@ formatter.match({
   "location": "GoogleStepDefination.user_enter_Home_page(String)"
 });
 formatter.result({
-  "duration": 985777006,
+  "duration": 891172242,
   "status": "passed"
 });
 formatter.match({
@@ -616,7 +551,7 @@ formatter.match({
   "location": "GoogleStepDefination.validate_if_the_searches_of_are_opened(String)"
 });
 formatter.result({
-  "duration": 9481170,
+  "duration": 9796460,
   "status": "passed"
 });
 formatter.match({
@@ -629,28 +564,28 @@ formatter.match({
   "location": "NavigationSteps.navigate_to_page(String)"
 });
 formatter.result({
-  "duration": 776963391,
+  "duration": 706497117,
   "status": "passed"
 });
 formatter.match({
   "location": "NavigationSteps.navigate_to_the_first_link()"
 });
 formatter.result({
-  "duration": 2384392991,
+  "duration": 1427167441,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.print_Title()"
 });
 formatter.result({
-  "duration": 11754259,
+  "duration": 48850,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleStepDefination.close_the_Browse()"
 });
 formatter.result({
-  "duration": 137852646,
+  "duration": 119562670,
   "status": "passed"
 });
 });

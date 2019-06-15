@@ -1,7 +1,6 @@
 Feature: Google Tests 
 
 Scenario: Google Search Test by passing string directly 
-	Given open browser
 	Given user opens Google Home page 
 	When user enter "Navathej" Home page 
 	Then validate if the searches of "Navathej" are opened 
@@ -10,7 +9,6 @@ Scenario: Google Search Test by passing string directly
 	Then quit the browser
 	
 Scenario Outline: Google Search Test by using Examples
-	Given open browser
 	Given user opens Google Home page 
 	When user enter "<searchString>" Home page 
 	Then validate if the searches of "<searchString>" are opened 
@@ -23,7 +21,6 @@ Scenario Outline: Google Search Test by using Examples
 		|Manjeera|
 				
 Scenario: Google Search Test By using Data Map
-	Given open browser
 	Given  user opens Google Home page 
 	When  user enter searchString Home page 
 		|searchString|

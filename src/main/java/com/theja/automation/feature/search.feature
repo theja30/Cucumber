@@ -1,7 +1,6 @@
 Feature: Google Tests 
 
 Scenario: Google Search Test by passing string directly 
-	Given open browser
 	Given user opens Google Home page 
 	When user enter "Navathej" Home page 
 	Then validate if the searches of "Navathej" are opened 
