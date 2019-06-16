@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="50.078401">
-<testcase classname="Google Tests" name="Google Search Test by passing string directly" time="12.319381">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="63.345204">
+<testcase classname="Google Tests" name="Google Search Test by passing string directly" time="13.478224">
 <system-out><![CDATA[Given user opens Google Home page...........................................passed
 When user enter "Navathej" Home page........................................passed
 Then validate if the searches of "Navathej" are opened......................passed
@@ -8,7 +8,7 @@ Then print Title............................................................pass
 Then quit the browser.......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Google Tests" name="Google Search Test by using Examples" time="8.293026">
+<testcase classname="Google Tests" name="Google Search Test by using Examples" time="10.312553">
 <system-out><![CDATA[Given user opens Google Home page...........................................passed
 When user enter "Navathej" Home page........................................passed
 Then validate if the searches of "Navathej" are opened......................passed
@@ -17,7 +17,7 @@ Then print Title............................................................pass
 Then quit the browser.......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Google Tests" name="Google Search Test by using Examples 2" time="13.461326">
+<testcase classname="Google Tests" name="Google Search Test by using Examples 2" time="17.659369">
 <system-out><![CDATA[Given user opens Google Home page...........................................passed
 When user enter "Manjeera" Home page........................................passed
 Then validate if the searches of "Manjeera" are opened......................passed
@@ -26,7 +26,7 @@ Then print Title............................................................pass
 Then quit the browser.......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Google Tests" name="Google Search Test By using Data Map" time="10.073989">
+<testcase classname="Google Tests" name="Google Search Test By using Data Map" time="12.473906">
 <system-out><![CDATA[Given user opens Google Home page...........................................passed
 When user enter searchString Home page......................................passed
 Then validate if the searches of searchString are opened....................passed
@@ -35,7 +35,7 @@ Then print Title............................................................pass
 Then quit the browser.......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Google Tests" name="Google Search Test by passing string directly" time="5.930679">
+<testcase classname="Google Tests" name="Google Search Test by passing string directly" time="9.421152">
 <system-out><![CDATA[Given user opens Google Home page...........................................passed
 When user enter "Navathej" Home page........................................passed
 Then validate if the searches of "Navathej" are opened......................passed

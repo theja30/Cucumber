@@ -13,16 +13,23 @@ import com.theja.automation.pages.SearchPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
 
-public class NavigationSteps  extends TestBase {
+public class NavigationSteps {
 
+	TestBase testBase;
 	SearchPage searchPage;
+	
+	public NavigationSteps(TestBase context)
+	{
+		testBase=context;
+		searchPage= testBase.getPageObjectManager().getSearchPage();
+	}
 	
 	@Then("^navigate to the first link$")
 	public void navigate_to_the_first_link() {
 		/*WebElement links = driver
 				.findElement(By.xpath("//div[@id='search']//div[@class='g' and position()=1]//div[@class='r']/a"));
 		driver.navigate().to(links.getAttribute("href"));*/
-		searchPage =new SearchPage();
+		//searchPage =new SearchPage();
 		searchPage.navigateToFirstLink();
 	}
 	
@@ -41,7 +48,7 @@ public class NavigationSteps  extends TestBase {
 		{
 			System.out.println("already in the specified page");
 		}*/
-		searchPage =new SearchPage();
+		//searchPage =new SearchPage();
 		searchPage.navigateToPage(pageNumber);
 	}
 

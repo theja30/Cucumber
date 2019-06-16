@@ -20,27 +20,29 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class GoogleStepDefination extends TestBase {
+public class GoogleStepDefination {
 
+	TestBase testBase;
 	 HomePage homePage;
 	 SearchPage searchPage;
+	 
+	 public GoogleStepDefination(TestBase context)
+	 {
+		 testBase=context;
+		 homePage= testBase.getPageObjectManager().getHomePage();
+		 searchPage=testBase.getPageObjectManager().getSearchPage();
+	 }
 	
 	@Given("^user opens Google Home page$")
 	public void user_opens_Google_Home_page() {
-		TestBase.initialization();
-		homePage=new HomePage();
+		//TestBase.initialization();
 		homePage.navigateToHomePage();
 		
 	}
 
 	@When("^user enter \"([^\"]*)\" Home page$")
 	public void user_enter_Home_page(String searchString) throws Throwable {
-		searchPage=homePage.searchGivenString(searchString);
-	}
-
-	private void clickButton(WebElement button) {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", button);
+		homePage.searchGivenString(searchString);
 	}
 	
 	@Then("^validate if the searches of \"([^\"]*)\" are opened$")
@@ -74,6 +76,6 @@ public class GoogleStepDefination extends TestBase {
 
 	@Then("^quit the browser$")
 	public void close_the_Browse() {
-		quitBrowser();
+		testBase.quitBrowser();
 	}
 }

@@ -3,21 +3,35 @@ package com.theja.automation.core;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.theja.automation.managers.PageObjectManager;
 import com.theja.automation.pages.HomePage;
 import com.theja.automation.pages.SearchPage;
 
 public class TestBase {
 	
-	public static WebDriver driver;
+	private WebDriver driver;
+	private PageObjectManager pageObjectManager;
 	
-	public static void initialization()
+	public TestBase()
 	{
 		System.setProperty("webdriver.chrome.driver", "/Users/Theja/Documents/Study/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		pageObjectManager = new PageObjectManager(driver);
 	}
+	
+	/*public static void initialization()
+	{
+		System.setProperty("webdriver.chrome.driver", "/Users/Theja/Documents/Study/chromedriver");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+	}*/
 
-	public static void quitBrowser()
+	public PageObjectManager getPageObjectManager()
+	{
+		return pageObjectManager;
+	}
+	public void quitBrowser()
 	{
 		driver.quit();
 	}
